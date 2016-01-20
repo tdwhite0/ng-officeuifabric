@@ -1,9 +1,10 @@
 'use strict';
 
 import * as fs from 'fs';
-import {BuildConfig} from './config/build';
+//import {BuildConfig} from './config/build';
 let gulp: any = require('gulp-help')(require('gulp'));
 
+console.log('hi');
 /**
  * yargs variables can be passed in to alter the behavior, when present.
  * Example: gulp serve-dev
@@ -14,6 +15,7 @@ let gulp: any = require('gulp-help')(require('gulp'));
 // +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
 
 // load all gulp tasks (located in ./build/gulp/tasks)
+/*
 fs.readdirSync(BuildConfig.GULP_TASKS)
   .filter((filename: any) => {
     return filename.match(/\.js$/i);
@@ -36,3 +38,4 @@ fs.readdirSync(BuildConfig.GULP_TASKS)
       }
     );
   });
+  */
